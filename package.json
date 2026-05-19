@@ -1,0 +1,9 @@
+{
+  "name": "mon-premier-service",
+  "version": "1.0.0",
+  "description": "Mon premier service DxP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mon-premier-service
+  description: Mon premier service DxP
+spec:
+  type: service
+  lifecycle: development
+  owner: team-devops
