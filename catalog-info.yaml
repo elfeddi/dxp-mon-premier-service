@@ -3,6 +3,9 @@ kind: Component
 metadata:
   name: mon-premier-service
   description: Mon premier service DxP
+  annotations:
+    argocd/app-name: mon-premier-service
+    backstage.io/source-location: url:https://github.com/elfeddi/dxp-mon-premier-service
 spec:
   type: service
   lifecycle: development
