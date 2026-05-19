@@ -1,6 +1,6 @@
 # mon-premier-service
 
-Mon premier service DxP
+Mon premier service DxP (Lite)
 
 ## Stack
 - Langage : nodejs
