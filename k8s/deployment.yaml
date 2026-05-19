@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mon-premier-service
+  namespace: mon-premier-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mon-premier-service
+  template:
+    metadata:
+      labels:
+        app: mon-premier-service
+    spec:
+      containers:
+      - name: mon-premier-service
+        image: harbor.dxp/dxp/mon-premier-service:latest
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mon-premier-service
+  namespace: mon-premier-service
+spec:
+  selector:
+    app: mon-premier-service
+  ports:
+  - port: 80
+    targetPort: 8080
