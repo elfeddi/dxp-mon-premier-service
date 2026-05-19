@@ -5,6 +5,7 @@ metadata:
   description: Mon premier service DxP
   annotations:
     argocd/app-name: mon-premier-service
+    argocd/app-selector: app.kubernetes.io/name=mon-premier-service
     backstage.io/source-location: url:https://github.com/elfeddi/dxp-mon-premier-service
 spec:
   type: service
